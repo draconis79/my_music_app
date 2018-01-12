@@ -1,0 +1,753 @@
+Started GET "/" for 127.0.0.1 at 2018-01-12 09:04:40 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "music_app_api_development" does not exist
+):
+  
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:678:in `rescue in connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:673:in `connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:208:in `initialize'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:564:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:555:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/albums" for 127.0.0.1 at 2018-01-12 09:05:03 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "music_app_api_development" does not exist
+):
+  
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:678:in `rescue in connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:673:in `connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:208:in `initialize'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:564:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:555:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/albums" for 127.0.0.1 at 2018-01-12 09:11:15 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "music_app_api_development" does not exist
+):
+  
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:678:in `rescue in connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:673:in `connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:208:in `initialize'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:564:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:555:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/albums" for 127.0.0.1 at 2018-01-12 09:17:04 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "music_app_api_development" does not exist
+):
+  
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:678:in `rescue in connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:673:in `connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:208:in `initialize'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:564:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:555:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/albums" for 127.0.0.1 at 2018-01-12 09:37:31 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "music_app_api_development" does not exist
+):
+  
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:678:in `rescue in connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:673:in `connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:208:in `initialize'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:564:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:555:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-01-12 09:37:42 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "music_app_api_development" does not exist
+):
+  
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:678:in `rescue in connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:673:in `connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:208:in `initialize'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:564:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:555:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-01-12 09:44:56 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "music_app_api_development" does not exist
+):
+  
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:678:in `rescue in connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:673:in `connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:208:in `initialize'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:564:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:555:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/albums" for 127.0.0.1 at 2018-01-12 09:45:01 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "music_app_api_development" does not exist
+):
+  
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:678:in `rescue in connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:673:in `connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:208:in `initialize'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:564:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:555:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-01-12 09:55:16 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "music_app_api_development" does not exist
+):
+  
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:678:in `rescue in connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:673:in `connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:208:in `initialize'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:564:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:555:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-01-12 09:57:42 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "music_app_api_development" does not exist
+):
+  
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:678:in `rescue in connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:673:in `connect'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:208:in `initialize'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.0.beta2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:564:in `connection'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:555:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (441.1ms)[0m  [1m[35mCREATE DATABASE "music_app_api_development" ENCODING = 'unicode'[0m
+  [1m[35m (330.6ms)[0m  [1m[35mCREATE DATABASE "music_app_api_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2018-01-12 10:00:03 -0800
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:578:in `check_pending!'
+activerecord (5.2.0.beta2) lib/active_record/migration.rb:555:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (22.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7452887540151027345)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateActiveStorageTables (20180111213759)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180111213759"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAlbums (20180112032839)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "albums" ("id" bigserial primary key, "artist" character varying, "title" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180112032839"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateReviews (20180112032916)
+  [1m[35m (9.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "title" character varying, "content" character varying, "author" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180112032916"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddForeignKeyToReviews (20180112033228)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "reviews" ADD "album_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180112033228"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddColumnToAlbums (20180112033807)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "albums" ADD "img" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180112033807"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-01-12 18:00:19.570586"], ["updated_at", "2018-01-12 18:00:19.570586"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7452887540151027345)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-01-12 10:00:37 -0800
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/mandytong/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/railties-5.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/mandytong/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/railties-5.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (5.8ms)
+Completed 200 OK in 20ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-12 10:00:51 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.7ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+Completed 200 OK in 8ms (Views: 1.8ms | ActiveRecord: 2.3ms)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (5.0ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Fleetwood Mac"], ["title", "Rumours"], ["created_at", "2018-01-12 18:01:16.410413"], ["updated_at", "2018-01-12 18:01:16.410413"], ["img", "https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Stevie Nicks"], ["title", "Bella Donna"], ["created_at", "2018-01-12 18:01:16.422328"], ["updated_at", "2018-01-12 18:01:16.422328"], ["img", "https://images.hellogiggles.com/uploads/2016/08/22121353/Stevie-Nicks-Bella-Donna-Album.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Lorde"], ["title", "Pure Heroine"], ["created_at", "2018-01-12 18:01:16.424803"], ["updated_at", "2018-01-12 18:01:16.424803"], ["img", "https://images-na.ssl-images-amazon.com/images/I/41X43hd--cL.jpg"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Lady Gaga"], ["title", "The Fame Monster"], ["created_at", "2018-01-12 18:01:16.426425"], ["updated_at", "2018-01-12 18:01:16.426425"], ["img", "https://img.discogs.com/sYelW99RLgJSY79BlvV0lCYt9m0=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3599749-1457689026-5520.jpeg.jpg"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.5ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Collective Soul"], ["title", "Dosage"], ["created_at", "2018-01-12 18:01:16.428193"], ["updated_at", "2018-01-12 18:01:16.428193"], ["img", "http://ecx.images-amazon.com/images/I/51tdAL-V%2BSL.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Fountains of Wayne"], ["title", "Fountains of Wayne"], ["created_at", "2018-01-12 18:01:16.432928"], ["updated_at", "2018-01-12 18:01:16.432928"], ["img", "https://upload.wikimedia.org/wikipedia/en/3/36/Fountains_of_Wayne-Fountains_of_Wayne_%28album_cover%29.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Fastball"], ["title", "All the Pain Money Can Buy"], ["created_at", "2018-01-12 18:01:16.435392"], ["updated_at", "2018-01-12 18:01:16.435392"], ["img", "https://upload.wikimedia.org/wikipedia/en/b/b7/All_the_Pain_Money_Can_Buy_%28Fastball_album_-_cover_art%29.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Natalie Imbruglia"], ["title", "Left of the Middle"], ["created_at", "2018-01-12 18:01:16.437913"], ["updated_at", "2018-01-12 18:01:16.437913"], ["img", "https://upload.wikimedia.org/wikipedia/en/3/3d/Natalie_Imbruglia_-_Left_of_the_Middle.png"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Lusine"], ["title", "A Certain Distance"], ["created_at", "2018-01-12 18:01:16.441072"], ["updated_at", "2018-01-12 18:01:16.441072"], ["img", "https://img.discogs.com/-uR2os-WJiVXlDpZnI27qqEZG6Y=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1919966-1253414721.jpeg.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Marconi Union"], ["title", "Distance"], ["created_at", "2018-01-12 18:01:16.445091"], ["updated_at", "2018-01-12 18:01:16.445091"], ["img", "https://f4.bcbits.com/img/a3400889561_10.jpg"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Tim Hecker"], ["title", "Harmony in Ultraviolet"], ["created_at", "2018-01-12 18:01:16.447122"], ["updated_at", "2018-01-12 18:01:16.447122"], ["img", "https://i.ytimg.com/vi/GlCpOhPZXVo/maxresdefault.jpg"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Michelle Branch"], ["title", "Hopeless Romantic"], ["created_at", "2018-01-12 18:01:16.451297"], ["updated_at", "2018-01-12 18:01:16.451297"], ["img", "https://themusicuniverse.com/wp-content/uploads/2017/03/michellebranch.jpg"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Boards of Canada"], ["title", "The Campfire Headphase"], ["created_at", "2018-01-12 18:01:16.457103"], ["updated_at", "2018-01-12 18:01:16.457103"], ["img", "https://upload.wikimedia.org/wikipedia/en/e/e6/The_Campfire_Headphase.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.2ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Skye Sweetnam"], ["title", "Noise From the Basement"], ["created_at", "2018-01-12 18:01:16.459038"], ["updated_at", "2018-01-12 18:01:16.459038"], ["img", "https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "t.A.T.u."], ["title", "200 KMH in the Wrong Lane"], ["created_at", "2018-01-12 18:01:16.460783"], ["updated_at", "2018-01-12 18:01:16.460783"], ["img", "https://upload.wikimedia.org/wikipedia/en/b/b5/200_kmh.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.5ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Yeah Yeah Yeahs"], ["title", "Fever to Tell"], ["created_at", "2018-01-12 18:01:16.462915"], ["updated_at", "2018-01-12 18:01:16.462915"], ["img", "http://www.dejkamusic.com/images/album/large/yeah_yeah_yeahs/fever_to_tell.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.5ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Editors"], ["title", "An End Has a Start"], ["created_at", "2018-01-12 18:01:16.466699"], ["updated_at", "2018-01-12 18:01:16.466699"], ["img", "https://s-media-cache-ak0.pinimg.com/originals/6d/e9/db/6de9db6557053fe5f721b21cf25223ad.jpg"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "The Presidents of the United States of America"], ["title", "The Presidents of the United States of America"], ["created_at", "2018-01-12 18:01:16.470640"], ["updated_at", "2018-01-12 18:01:16.470640"], ["img", "https://upload.wikimedia.org/wikipedia/en/4/4c/The_Presidents_of_the_United_States_of_America-The_Presidents_of_the_United_States_of_America.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Flickerstick"], ["title", "Welcoming Home the Astronauts"], ["created_at", "2018-01-12 18:01:16.472674"], ["updated_at", "2018-01-12 18:01:16.472674"], ["img", "https://images-na.ssl-images-amazon.com/images/I/51MQfaiwFbL.jpg"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Tegan and Sara"], ["title", "Heartthrob"], ["created_at", "2018-01-12 18:01:16.474599"], ["updated_at", "2018-01-12 18:01:16.474599"], ["img", "http://teganandsara.com/wp-content/uploads/2012/11/HEARTTHROB-COVER.jpg"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Brandi Carlile"], ["title", "Give Up the Ghost"], ["created_at", "2018-01-12 18:01:16.476629"], ["updated_at", "2018-01-12 18:01:16.476629"], ["img", "https://fanart.tv/fanart/music/baf05baf-69fb-47dd-93c2-033536b8c385/albumcover/give-up-the-ghost-50d18620b5fa8.jpg"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Ratatat"], ["title", "Classics"], ["created_at", "2018-01-12 18:01:16.483188"], ["updated_at", "2018-01-12 18:01:16.483188"], ["img", "https://i.scdn.co/image/3485f87c131c7587568b15ba3a6d97b07cd144e4"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.3ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Alanis Morissette"], ["title", "Jagged Little Pill"], ["created_at", "2018-01-12 18:01:16.486002"], ["updated_at", "2018-01-12 18:01:16.486002"], ["img", "https://i.pinimg.com/736x/a9/ae/a2/a9aea22229b2092ddb9ea49146551298--music-albums-cleaning.jpg"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.4ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "The Birthday Massacre"], ["title", "Pins and Needles"], ["created_at", "2018-01-12 18:01:16.487856"], ["updated_at", "2018-01-12 18:01:16.487856"], ["img", "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Tbmpins.jpg/220px-Tbmpins.jpg"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Create (0.2ms)[0m  [1m[32mINSERT INTO "albums" ("artist", "title", "created_at", "updated_at", "img") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist", "Polaris"], ["title", "Music From the Adventures of Pete and Pete"], ["created_at", "2018-01-12 18:01:16.489797"], ["updated_at", "2018-01-12 18:01:16.489797"], ["img", "https://consequenceofsound.files.wordpress.com/2015/02/polaris-album-coveradve.jpg?quality=80&w=1200"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/albums" for 127.0.0.1 at 2018-01-12 10:01:20 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+Completed 200 OK in 40ms (Views: 29.4ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-12 10:08:48 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-12 10:13:26 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/mandytong/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/railties-5.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/mandytong/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/railties-5.2.0.beta2/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-12 10:14:24 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-12 10:28:18 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-12 12:25:57 -0800
+  
+LoadError (cannot load such file -- /Users/mandytong/Desktop/dev/my_music_app/music_app_api/config/routes.rb):
+  
+bootsnap (1.1.8) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `load'
+bootsnap (1.1.8) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `load'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:277:in `block in load'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:249:in `load_dependency'
+activesupport (5.2.0.beta2) lib/active_support/dependencies.rb:277:in `load'
+railties (5.2.0.beta2) lib/rails/application/routes_reloader.rb:57:in `block in load_paths'
+railties (5.2.0.beta2) lib/rails/application/routes_reloader.rb:57:in `each'
+railties (5.2.0.beta2) lib/rails/application/routes_reloader.rb:57:in `load_paths'
+railties (5.2.0.beta2) lib/rails/application/routes_reloader.rb:20:in `reload!'
+railties (5.2.0.beta2) lib/rails/application/routes_reloader.rb:43:in `block in updater'
+activesupport (5.2.0.beta2) lib/active_support/file_update_checker.rb:83:in `execute'
+railties (5.2.0.beta2) lib/rails/application/routes_reloader.rb:27:in `execute'
+railties (5.2.0.beta2) lib/rails/application/finisher.rb:143:in `block (2 levels) in <module:Finisher>'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:426:in `instance_exec'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:606:in `block (2 levels) in default_terminator'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:605:in `catch'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:605:in `block in default_terminator'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.0.beta2) lib/active_support/callbacks.rb:131:in `run_callbacks'
+activesupport (5.2.0.beta2) lib/active_support/execution_wrapper.rb:110:in `run!'
+activesupport (5.2.0.beta2) lib/active_support/reloader.rb:115:in `run!'
+activesupport (5.2.0.beta2) lib/active_support/execution_wrapper.rb:72:in `block in run!'
+activesupport (5.2.0.beta2) lib/active_support/execution_wrapper.rb:69:in `tap'
+activesupport (5.2.0.beta2) lib/active_support/execution_wrapper.rb:69:in `run!'
+activesupport (5.2.0.beta2) lib/active_support/reloader.rb:64:in `run!'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/albums" for 127.0.0.1 at 2018-01-12 12:26:07 -0800
+  
+ActionController::RoutingError (No route matches [POST] "/albums"):
+  
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
