@@ -1,27 +1,7 @@
-Album.create([
-  { artist: "Fleetwood Mac", title: "Rumours", img: "https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG"},
-  { artist: "Stevie Nicks", title: "Bella Donna", img: "https://images.hellogiggles.com/uploads/2016/08/22121353/Stevie-Nicks-Bella-Donna-Album.jpg"},
-  { artist: "Lorde", title: "Pure Heroine", img: "https://images-na.ssl-images-amazon.com/images/I/41X43hd--cL.jpg"},
-  { artist: "Lady Gaga", title: "The Fame Monster", img: "https://img.discogs.com/sYelW99RLgJSY79BlvV0lCYt9m0=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3599749-1457689026-5520.jpeg.jpg"},
-  { artist: "Collective Soul", title: "Dosage", img: "http://ecx.images-amazon.com/images/I/51tdAL-V%2BSL.jpg"},
-  { artist: "Fountains of Wayne", title: "Fountains of Wayne", img: "https://upload.wikimedia.org/wikipedia/en/3/36/Fountains_of_Wayne-Fountains_of_Wayne_%28album_cover%29.jpg"},
-  { artist: "Fastball", title: "All the Pain Money Can Buy", img: "https://upload.wikimedia.org/wikipedia/en/b/b7/All_the_Pain_Money_Can_Buy_%28Fastball_album_-_cover_art%29.jpg"},
-  { artist: "Natalie Imbruglia", title: "Left of the Middle", img: "https://upload.wikimedia.org/wikipedia/en/3/3d/Natalie_Imbruglia_-_Left_of_the_Middle.png"},
-  { artist: "Lusine", title: "A Certain Distance", img: "https://img.discogs.com/-uR2os-WJiVXlDpZnI27qqEZG6Y=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1919966-1253414721.jpeg.jpg"},
-  { artist: "Marconi Union", title: "Distance", img: "https://f4.bcbits.com/img/a3400889561_10.jpg"},
-  { artist: "Tim Hecker", title: "Harmony in Ultraviolet", img: "https://i.ytimg.com/vi/GlCpOhPZXVo/maxresdefault.jpg"},
-  { artist: "Michelle Branch", title: "Hopeless Romantic", img: "https://themusicuniverse.com/wp-content/uploads/2017/03/michellebranch.jpg"},
-  { artist: "Boards of Canada", title: "The Campfire Headphase", img: "https://upload.wikimedia.org/wikipedia/en/e/e6/The_Campfire_Headphase.jpg"},
-  { artist: "Skye Sweetnam", title: "Noise From the Basement", img: "https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG"},
-  { artist: "t.A.T.u.", title: "200 KMH in the Wrong Lane", img: "https://upload.wikimedia.org/wikipedia/en/b/b5/200_kmh.jpg"},
-  { artist: "Yeah Yeah Yeahs", title: "Fever to Tell", img: "http://www.dejkamusic.com/images/album/large/yeah_yeah_yeahs/fever_to_tell.jpg"},
-  { artist: "Editors", title: "An End Has a Start", img: "https://s-media-cache-ak0.pinimg.com/originals/6d/e9/db/6de9db6557053fe5f721b21cf25223ad.jpg"},
-  { artist: "The Presidents of the United States of America", title: "The Presidents of the United States of America", img: "https://upload.wikimedia.org/wikipedia/en/4/4c/The_Presidents_of_the_United_States_of_America-The_Presidents_of_the_United_States_of_America.jpg"},
-  { artist: "Flickerstick", title: "Welcoming Home the Astronauts", img: "https://images-na.ssl-images-amazon.com/images/I/51MQfaiwFbL.jpg"},
-  { artist: "Tegan and Sara", title: "Heartthrob", img: "http://teganandsara.com/wp-content/uploads/2012/11/HEARTTHROB-COVER.jpg"},
-  { artist: "Brandi Carlile", title: "Give Up the Ghost", img: "https://fanart.tv/fanart/music/baf05baf-69fb-47dd-93c2-033536b8c385/albumcover/give-up-the-ghost-50d18620b5fa8.jpg"},
-  { artist: "Ratatat", title: "Classics", img: "https://i.scdn.co/image/3485f87c131c7587568b15ba3a6d97b07cd144e4"},
-  { artist: "Alanis Morissette", title: "Jagged Little Pill", img: "https://i.pinimg.com/736x/a9/ae/a2/a9aea22229b2092ddb9ea49146551298--music-albums-cleaning.jpg"},
-  { artist: "The Birthday Massacre", title: "Pins and Needles", img: "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Tbmpins.jpg/220px-Tbmpins.jpg"},
-  { artist: "Polaris", title: "Music From the Adventures of Pete and Pete", img: "https://consequenceofsound.files.wordpress.com/2015/02/polaris-album-coveradve.jpg?quality=80&w=1200"}
-])
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
