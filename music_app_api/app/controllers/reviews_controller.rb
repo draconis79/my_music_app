@@ -2,7 +2,7 @@ class ReviewsController < ApplicationController
 
   # GET /reviews
   def index
-    @reviews = Review.all
+    @reviews = Review.all.reverse
 
     render json: @reviews
   end
@@ -11,6 +11,7 @@ class ReviewsController < ApplicationController
   def create
     @review = Review.new(review_params)
     @review.album_id = params[:album_id]
+
 
     if @review.save
       render json: @review, status: :created
