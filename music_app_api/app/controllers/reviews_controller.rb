@@ -20,7 +20,21 @@ class ReviewsController < ApplicationController
     end
   end
 
+  def update
+    find_review.update(review_params)
+    render(json: { review: find_review })
+  end
+
+  def destroy
+    find_review.destroy
+    render(status: 204)
+  end
+
   private
+  
+  def find_review
+    @review ||= Review.find(params[:id])
+  end
     # Only allow a trusted parameter "white list" through.
     def review_params
       params.require(:review).permit(:title, :content, :author)
