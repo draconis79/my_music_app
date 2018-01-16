@@ -5,7 +5,7 @@ class AlbumsController < ApplicationController
   def index
     @albums = Album.all
 
-    render json: @albums
+    render json: @albums.to_json(include: :reviews)
   end
 
   # GET /albums/1
