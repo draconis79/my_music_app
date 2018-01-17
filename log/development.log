@@ -751,3 +751,1943 @@ puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
 puma (3.11.0) lib/puma/server.rb:438:in `process_client'
 puma (3.11.0) lib/puma/server.rb:302:in `block in run'
 puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:12:31 -0800
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (20.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (2.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (6.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (34.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 784ms (Views: 0.8ms | ActiveRecord: 208.5ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:12:45 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (3.0ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 19ms (Views: 0.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:12:53 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (1.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (2.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:12:54 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:13:08 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"akjfd", "author"=>"dgakjdf", "content"=>"afdfadsf", "album_id"=>"1", "review"=>{"title"=>"akjfd", "content"=>"afdfadsf", "author"=>"dgakjdf"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (1.7ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (38.9ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "akjfd"], ["content", "afdfadsf"], ["author", "dgakjdf"], ["created_at", "2018-01-17 03:13:09.009358"], ["updated_at", "2018-01-17 03:13:09.009358"], ["album_id", 1]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 211ms (Views: 12.2ms | ActiveRecord: 54.1ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:13:09 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.9ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (2.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (4.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (3.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (10.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (1.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 337ms (Views: 0.2ms | ActiveRecord: 37.6ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:13:23 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"akjfd", "author"=>"afasdfsdfdsdgakjdf", "content"=>"afdfadsf", "album_id"=>"1", "review"=>{"title"=>"akjfd", "content"=>"afdfadsf", "author"=>"afasdfsdfdsdgakjdf"}}
+  [1m[35m (3.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (3.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (5.9ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "akjfd"], ["content", "afdfadsf"], ["author", "afasdfsdfdsdgakjdf"], ["created_at", "2018-01-17 03:13:23.892425"], ["updated_at", "2018-01-17 03:13:23.892425"], ["album_id", 1]]
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 39ms (Views: 1.0ms | ActiveRecord: 21.8ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:13:23 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (1.7ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (3.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 152ms (Views: 0.5ms | ActiveRecord: 17.1ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:14:16 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"asdff", "author"=>"sfdfs", "content"=>"asdsf", "album_id"=>"1", "review"=>{"title"=>"asdff", "content"=>"asdsf", "author"=>"sfdfs"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (0.8ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "asdff"], ["content", "asdsf"], ["author", "sfdfs"], ["created_at", "2018-01-17 03:14:16.314262"], ["updated_at", "2018-01-17 03:14:16.314262"], ["album_id", 1]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 17ms (Views: 1.1ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:14:16 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (2.2ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (2.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (6.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (2.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (2.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 290ms (Views: 0.5ms | ActiveRecord: 29.3ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:14:26 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd review", "author"=>"sfdfs", "content"=>"asdsf", "album_id"=>"1", "review"=>{"title"=>"2nd review", "content"=>"asdsf", "author"=>"sfdfs"}}
+  [1m[35m (3.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (2.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (2.1ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "2nd review"], ["content", "asdsf"], ["author", "sfdfs"], ["created_at", "2018-01-17 03:14:26.108820"], ["updated_at", "2018-01-17 03:14:26.108820"], ["album_id", 1]]
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 34ms (Views: 1.4ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:14:26 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (1.6ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (2.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (4.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 239ms (Views: 0.2ms | ActiveRecord: 22.7ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:14:29 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd review", "author"=>"sfdfs", "content"=>"asdsf", "album_id"=>"1", "review"=>{"title"=>"2nd review", "content"=>"asdsf", "author"=>"sfdfs"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.8ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (0.8ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "2nd review"], ["content", "asdsf"], ["author", "sfdfs"], ["created_at", "2018-01-17 03:14:29.771162"], ["updated_at", "2018-01-17 03:14:29.771162"], ["album_id", 1]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 18ms (Views: 1.1ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:14:29 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.9ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (3.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (2.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 277ms (Views: 0.3ms | ActiveRecord: 18.8ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:14:35 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd review", "author"=>"sfdfs", "content"=>"asdsf", "album_id"=>"1", "review"=>{"title"=>"2nd review", "content"=>"asdsf", "author"=>"sfdfs"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (1.9ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "2nd review"], ["content", "asdsf"], ["author", "sfdfs"], ["created_at", "2018-01-17 03:14:35.766647"], ["updated_at", "2018-01-17 03:14:35.766647"], ["album_id", 1]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 17ms (Views: 0.8ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:14:35 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (1.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (3.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (2.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 250ms (Views: 0.2ms | ActiveRecord: 19.0ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:14:39 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd review", "author"=>"sfdfs", "content"=>"asdsf", "album_id"=>"1", "review"=>{"title"=>"2nd review", "content"=>"asdsf", "author"=>"sfdfs"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (3.1ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "2nd review"], ["content", "asdsf"], ["author", "sfdfs"], ["created_at", "2018-01-17 03:14:39.932490"], ["updated_at", "2018-01-17 03:14:39.932490"], ["album_id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 17ms (Views: 4.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:14:39 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (1.7ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (4.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (8.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (1.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 217ms (Views: 0.2ms | ActiveRecord: 26.8ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:14:46 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd review", "author"=>"sfdfs", "content"=>"asdsf", "album_id"=>"1", "review"=>{"title"=>"2nd review", "content"=>"asdsf", "author"=>"sfdfs"}}
+  [1m[35m (16.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (4.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (1.8ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "2nd review"], ["content", "asdsf"], ["author", "sfdfs"], ["created_at", "2018-01-17 03:14:46.925132"], ["updated_at", "2018-01-17 03:14:46.925132"], ["album_id", 1]]
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 51ms (Views: 0.8ms | ActiveRecord: 29.3ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:14:47 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (1.1ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (2.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (1.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 234ms (Views: 0.2ms | ActiveRecord: 18.4ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:16:30 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd review", "author"=>"sfdfs", "content"=>"asdsf", "album_id"=>"1", "review"=>{"title"=>"2nd review", "content"=>"asdsf", "author"=>"sfdfs"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (2.9ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "2nd review"], ["content", "asdsf"], ["author", "sfdfs"], ["created_at", "2018-01-17 03:16:30.359909"], ["updated_at", "2018-01-17 03:16:30.359909"], ["album_id", 1]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 19ms (Views: 1.4ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:16:30 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (1.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (4.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (2.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (1.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 171ms (Views: 0.2ms | ActiveRecord: 23.5ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:21:19 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (5.2ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 57ms (Views: 0.1ms | ActiveRecord: 11.4ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:22:42 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"akjdsfkjfskja", "author"=>"affds", "content"=>"asfdsd", "album_id"=>"undefined", "review"=>{"title"=>"akjdsfkjfskja", "content"=>"asfdsd", "author"=>"affds"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 19ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:22:49 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.8ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:22:49 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:22:50 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/albums/1/reviews/1" for 127.0.0.1 at 2018-01-16 19:22:59 -0800
+Processing by ReviewsController#destroy as HTML
+  Parameters: {"album_id"=>"1", "id"=>"1"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReview Destroy (7.5ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 15ms (Views: 0.1ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:22:59 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (1.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (3.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (1.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (2.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (1.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 69ms (Views: 0.2ms | ActiveRecord: 19.1ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:23:14 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd revewi", "author"=>"affds", "content"=>"asfdsd", "album_id"=>"undefined", "review"=>{"title"=>"2nd revewi", "content"=>"asfdsd", "author"=>"affds"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:23:16 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd revewi", "author"=>"affds", "content"=>"asfdsd", "album_id"=>"undefined", "review"=>{"title"=>"2nd revewi", "content"=>"asfdsd", "author"=>"affds"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:23:17 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd revewi", "author"=>"affds", "content"=>"asfdsd", "album_id"=>"undefined", "review"=>{"title"=>"2nd revewi", "content"=>"asfdsd", "author"=>"affds"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:23:17 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd revewi", "author"=>"affds", "content"=>"asfdsd", "album_id"=>"undefined", "review"=>{"title"=>"2nd revewi", "content"=>"asfdsd", "author"=>"affds"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:23:17 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd revewi", "author"=>"affds", "content"=>"asfdsd", "album_id"=>"undefined", "review"=>{"title"=>"2nd revewi", "content"=>"asfdsd", "author"=>"affds"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.7ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:23:18 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd revewi", "author"=>"affds", "content"=>"asfdsd", "album_id"=>"undefined", "review"=>{"title"=>"2nd revewi", "content"=>"asfdsd", "author"=>"affds"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:23:18 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd revewi", "author"=>"affds", "content"=>"asfdsd", "album_id"=>"undefined", "review"=>{"title"=>"2nd revewi", "content"=>"asfdsd", "author"=>"affds"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:23:18 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd revewi", "author"=>"affds", "content"=>"asfdsd", "album_id"=>"undefined", "review"=>{"title"=>"2nd revewi", "content"=>"asfdsd", "author"=>"affds"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:23:18 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd revewi", "author"=>"affds", "content"=>"asfdsd", "album_id"=>"undefined", "review"=>{"title"=>"2nd revewi", "content"=>"asfdsd", "author"=>"affds"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:40:09 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.9ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 94ms (Views: 0.1ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:40:12 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/albums/1/reviews/2" for 127.0.0.1 at 2018-01-16 19:40:15 -0800
+Processing by ReviewsController#destroy as HTML
+  Parameters: {"album_id"=>"1", "id"=>"2"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReview Destroy (1.5ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 2]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 11ms (Views: 0.1ms | ActiveRecord: 8.1ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:28 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.7ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:29 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:29 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:29 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (1.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 7ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:30 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:30 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:30 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:30 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:31 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 1.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:31 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:31 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:32 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:37 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:45 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (1.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 7ms (Views: 0.3ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:46 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.8ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 14ms (Views: 0.2ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:46 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.1ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:50 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:50 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"1st", "author"=>"adasdf", "content"=>"adfsd", "album_id"=>"undefined", "review"=>{"title"=>"1st", "content"=>"adfsd", "author"=>"adasdf"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.1ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:55 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd", "author"=>"adsfdf", "content"=>"adfsdf", "album_id"=>"undefined", "review"=>{"title"=>"2nd", "content"=>"adfsdf", "author"=>"adsfdf"}}
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:55 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd", "author"=>"adsfdf", "content"=>"adfsdf", "album_id"=>"undefined", "review"=>{"title"=>"2nd", "content"=>"adfsdf", "author"=>"adsfdf"}}
+  [1m[35m (2.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 7ms (Views: 0.2ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:56 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd", "author"=>"adsfdf", "content"=>"adfsdf", "album_id"=>"undefined", "review"=>{"title"=>"2nd", "content"=>"adfsdf", "author"=>"adsfdf"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:40:56 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"2nd", "author"=>"adsfdf", "content"=>"adfsdf", "album_id"=>"undefined", "review"=>{"title"=>"2nd", "content"=>"adfsdf", "author"=>"adsfdf"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:47:35 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (1.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (1.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 111ms (Views: 0.3ms | ActiveRecord: 30.4ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:48:34 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 111ms (Views: 0.3ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:48:44 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (1.8ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:48:45 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:48:46 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:48:46 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:48:47 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:48:57 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"afds", "author"=>"asf", "content"=>"afsdf", "album_id"=>"1", "review"=>{"title"=>"afds", "content"=>"afsdf", "author"=>"asf"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (0.8ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "afds"], ["content", "afsdf"], ["author", "asf"], ["created_at", "2018-01-17 03:48:57.174211"], ["updated_at", "2018-01-17 03:48:57.174211"], ["album_id", 1]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 12ms (Views: 0.5ms | ActiveRecord: 7.3ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:48:58 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"album_id"=>"1", "review"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: review):
+  
+app/controllers/reviews_controller.rb:40:in `review_params'
+app/controllers/reviews_controller.rb:12:in `create'
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:49:19 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 96ms (Views: 0.5ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:49:20 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:49:24 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"asdf", "author"=>"adg", "content"=>"asg", "album_id"=>"1", "review"=>{"title"=>"asdf", "content"=>"asg", "author"=>"adg"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (0.3ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "asdf"], ["content", "asg"], ["author", "adg"], ["created_at", "2018-01-17 03:49:24.902791"], ["updated_at", "2018-01-17 03:49:24.902791"], ["album_id", 1]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 9ms (Views: 0.5ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:49:26 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"album_id"=>"1", "review"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: review):
+  
+app/controllers/reviews_controller.rb:40:in `review_params'
+app/controllers/reviews_controller.rb:12:in `create'
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:49:51 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (3.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (7.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (3.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (2.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (3.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 69ms (Views: 0.2ms | ActiveRecord: 26.7ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:49:52 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (2.0ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:49:56 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"af", "author"=>"asfd", "content"=>"adsf", "album_id"=>"1", "review"=>{"title"=>"af", "content"=>"adsf", "author"=>"asfd"}}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (1.2ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "af"], ["content", "adsf"], ["author", "asfd"], ["created_at", "2018-01-17 03:49:56.292675"], ["updated_at", "2018-01-17 03:49:56.292675"], ["album_id", 1]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 20ms (Views: 0.3ms | ActiveRecord: 8.3ms)
+
+
+Started DELETE "/albums/1/reviews/3" for 127.0.0.1 at 2018-01-16 19:50:59 -0800
+Processing by ReviewsController#destroy as HTML
+  Parameters: {"album_id"=>"1", "id"=>"3"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReview Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 3]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 9ms (Views: 0.1ms | ActiveRecord: 6.2ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 19:51:12 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"album_id"=>"undefined", "review"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: review):
+  
+app/controllers/reviews_controller.rb:40:in `review_params'
+app/controllers/reviews_controller.rb:12:in `create'
+Started GET "/albums/12" for 127.0.0.1 at 2018-01-16 19:51:14 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mAlbum Load (1.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/albums/12" for 127.0.0.1 at 2018-01-16 19:51:15 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/albums/12" for 127.0.0.1 at 2018-01-16 19:51:16 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/albums/12" for 127.0.0.1 at 2018-01-16 19:51:16 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:51:21 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (2.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (2.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 95ms (Views: 0.1ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 19:51:23 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:51:28 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"adfds", "author"=>"asdf", "content"=>"asdf", "album_id"=>"1", "review"=>{"title"=>"adfds", "content"=>"asdf", "author"=>"asdf"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (1.2ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "adfds"], ["content", "asdf"], ["author", "asdf"], ["created_at", "2018-01-17 03:51:28.955465"], ["updated_at", "2018-01-17 03:51:28.955465"], ["album_id", 1]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 18ms (Views: 0.5ms | ActiveRecord: 8.0ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 19:51:49 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"adaf", "author"=>"asdfs", "content"=>"asdf", "album_id"=>"1", "review"=>{"title"=>"adaf", "content"=>"asdf", "author"=>"asdfs"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (0.7ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "adaf"], ["content", "asdf"], ["author", "asdfs"], ["created_at", "2018-01-17 03:51:49.612482"], ["updated_at", "2018-01-17 03:51:49.612482"], ["album_id", 1]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 17ms (Views: 0.4ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 19:52:02 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 93ms (Views: 0.1ms | ActiveRecord: 8.0ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 20:02:40 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"vzzcxvxcv", "author"=>"zcxvxzcv", "album_id"=>"undefined", "review"=>{"title"=>"vzzcxvxcv", "author"=>"zcxvxzcv"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (2.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 31ms (Views: 0.3ms | ActiveRecord: 17.1ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 20:02:41 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/albums/1/reviews/4" for 127.0.0.1 at 2018-01-16 20:02:46 -0800
+Processing by ReviewsController#destroy as HTML
+  Parameters: {"album_id"=>"1", "id"=>"4"}
+  [1m[36mReview Load (1.9ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReview Destroy (0.4ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 4]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 11ms (Views: 0.1ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 20:04:08 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.9ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 74ms (Views: 0.1ms | ActiveRecord: 12.2ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 20:04:13 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"SDAS", "author"=>"FASFSA", "content"=>"sf", "album_id"=>"undefined", "review"=>{"title"=>"SDAS", "content"=>"sf", "author"=>"FASFSA"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 20:04:21 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/albums/1/reviews/5" for 127.0.0.1 at 2018-01-16 20:04:26 -0800
+Processing by ReviewsController#destroy as HTML
+  Parameters: {"album_id"=>"1", "id"=>"5"}
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReview Destroy (2.0ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 5]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 9ms (Views: 0.2ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 20:05:58 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"SDAS", "author"=>"FASFSA", "content"=>"sf", "album_id"=>"undefined", "review"=>{"title"=>"SDAS", "content"=>"sf", "author"=>"FASFSA"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 20:07:30 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 85ms (Views: 0.1ms | ActiveRecord: 6.8ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 20:07:59 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"agsdfdf", "author"=>"assdfasdf", "content"=>"sdfa", "album_id"=>"undefined", "review"=>{"title"=>"agsdfdf", "content"=>"sdfa", "author"=>"assdfasdf"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 20:08:00 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (1.6ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (2.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 3.6ms)
+
+
+Started DELETE "/albums/1/reviews/6" for 127.0.0.1 at 2018-01-16 20:08:01 -0800
+Processing by ReviewsController#destroy as HTML
+  Parameters: {"album_id"=>"1", "id"=>"6"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReview Destroy (1.2ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 6]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 12ms (Views: 0.1ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 20:13:52 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"agsdfdf", "author"=>"assdfasdf", "content"=>"sdfa", "album_id"=>"undefined", "review"=>{"title"=>"agsdfdf", "content"=>"sdfa", "author"=>"assdfasdf"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (1.0ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 21ms (Views: 0.2ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 21:44:42 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 31ms (Views: 0.1ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 21:52:12 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 49ms (Views: 0.1ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 21:54:25 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (1.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (6.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (5.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (2.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 110ms (Views: 0.1ms | ActiveRecord: 22.4ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 21:54:34 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"kafds", "author"=>"afdsf", "content"=>"asdf", "album_id"=>"undefined", "review"=>{"title"=>"kafds", "content"=>"asdf", "author"=>"afdsf"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (2.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 11ms (Views: 0.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 21:54:36 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (1.9ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 2.2ms)
+
+
+Started PUT "/albums/1/reviews/7" for 127.0.0.1 at 2018-01-16 21:54:43 -0800
+Processing by ReviewsController#update as HTML
+  Parameters: {"album_id"=>"1", "id"=>"7"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: review):
+  
+app/controllers/reviews_controller.rb:40:in `review_params'
+app/controllers/reviews_controller.rb:24:in `update'
+Started DELETE "/albums/1/reviews/7" for 127.0.0.1 at 2018-01-16 21:54:48 -0800
+Processing by ReviewsController#destroy as HTML
+  Parameters: {"album_id"=>"1", "id"=>"7"}
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReview Destroy (0.8ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 7]]
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 15ms (Views: 0.2ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 21:56:37 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 21:56:43 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 21:56:44 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 21:56:55 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (1.9ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2018-01-16 21:56:59 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2018-01-16 21:57:00 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 21:57:16 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (1.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 21:57:18 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (1.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 21:57:32 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 21:57:57 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 21:57:57 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (2.0ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 21:57:58 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 21:58:11 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (1.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/albums/1/reviews" for 127.0.0.1 at 2018-01-16 22:08:15 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"kafds", "author"=>"afdsf", "content"=>"asdf", "album_id"=>"1", "review"=>{"title"=>"kafds", "content"=>"asdf", "author"=>"afdsf"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.7ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Create (3.0ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "content", "author", "created_at", "updated_at", "album_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "kafds"], ["content", "asdf"], ["author", "afdsf"], ["created_at", "2018-01-17 06:08:15.680155"], ["updated_at", "2018-01-17 06:08:15.680155"], ["album_id", 1]]
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 42ms (Views: 0.7ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/albums/15" for 127.0.0.1 at 2018-01-16 22:08:24 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-16 22:08:29 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 280ms (Views: 0.1ms | ActiveRecord: 7.8ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 22:08:42 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"review 1", "author"=>"mandy", "content"=>"review 1", "album_id"=>"undefined", "review"=>{"title"=>"review 1", "content"=>"review 1", "author"=>"mandy"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 22:08:44 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"review 1", "author"=>"mandy", "content"=>"review 1", "album_id"=>"undefined", "review"=>{"title"=>"review 1", "content"=>"review 1", "author"=>"mandy"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 22:08:45 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"review 1", "author"=>"mandy", "content"=>"review 1", "album_id"=>"undefined", "review"=>{"title"=>"review 1", "content"=>"review 1", "author"=>"mandy"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/albums/undefined/reviews" for 127.0.0.1 at 2018-01-16 22:08:47 -0800
+Processing by ReviewsController#create as HTML
+  Parameters: {"title"=>"review 1", "author"=>"mandy", "content"=>"review 1", "album_id"=>"undefined", "review"=>{"title"=>"review 1", "content"=>"review 1", "author"=>"mandy"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (2.7ms)[0m  [1m[31mROLLBACK[0m
+Completed 422 Unprocessable Entity in 7ms (Views: 0.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 22:08:49 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.9ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 22:08:51 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 22:08:51 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.2ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/albums/1/reviews/8" for 127.0.0.1 at 2018-01-16 22:08:54 -0800
+Processing by ReviewsController#update as HTML
+  Parameters: {"album_id"=>"1", "id"=>"8"}
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 400 Bad Request in 3ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: review):
+  
+app/controllers/reviews_controller.rb:40:in `review_params'
+app/controllers/reviews_controller.rb:24:in `update'
+Started PUT "/albums/1/reviews/8" for 127.0.0.1 at 2018-01-16 22:08:55 -0800
+Processing by ReviewsController#update as HTML
+  Parameters: {"album_id"=>"1", "id"=>"8"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: review):
+  
+app/controllers/reviews_controller.rb:40:in `review_params'
+app/controllers/reviews_controller.rb:24:in `update'
+Started PUT "/albums/1/reviews/8" for 127.0.0.1 at 2018-01-16 22:08:59 -0800
+Processing by ReviewsController#update as HTML
+  Parameters: {"album_id"=>"1", "id"=>"8"}
+  [1m[36mReview Load (7.1ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 400 Bad Request in 14ms (ActiveRecord: 7.1ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: review):
+  
+app/controllers/reviews_controller.rb:40:in `review_params'
+app/controllers/reviews_controller.rb:24:in `update'
+Started PUT "/albums/1/reviews/8" for 127.0.0.1 at 2018-01-16 22:09:00 -0800
+Processing by ReviewsController#update as HTML
+  Parameters: {"album_id"=>"1", "id"=>"8"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: review):
+  
+app/controllers/reviews_controller.rb:40:in `review_params'
+app/controllers/reviews_controller.rb:24:in `update'
+Started DELETE "/albums/1/reviews/8" for 127.0.0.1 at 2018-01-16 22:09:01 -0800
+Processing by ReviewsController#destroy as HTML
+  Parameters: {"album_id"=>"1", "id"=>"8"}
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReview Destroy (0.5ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 8]]
+  [1m[35m (11.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 16ms (Views: 0.2ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 22:09:11 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (1.0ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 22:09:12 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/albums/1" for 127.0.0.1 at 2018-01-16 22:09:13 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (1.3ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (6.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-17 07:22:41 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (3.1ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (1.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 148ms (Views: 1.1ms | ActiveRecord: 28.7ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-17 07:24:01 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (1.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 60ms (Views: 0.2ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2018-01-17 07:25:01 -0800
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (2.1ms)[0m  [1m[34mSELECT "albums".* FROM "albums"[0m
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 1]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 2]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 3]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 4]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 5]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 6]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 7]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 8]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 9]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 10]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 11]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 12]]
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 13]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 14]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 15]]
+  [1m[36mReview Load (1.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 16]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 17]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 18]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 19]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 20]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 21]]
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 22]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 23]]
+  [1m[36mReview Load (7.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 24]]
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."album_id" = $1[0m  [["album_id", 25]]
+Completed 200 OK in 194ms (Views: 0.1ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/customers/5a203daa2078731877788445" for 127.0.0.1 at 2018-01-17 12:27:10 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/customers/5a203daa2078731877788445"):
+  
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0.beta2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0.beta2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0.beta2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0.beta2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.0.beta2) lib/rails/engine.rb:524:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
