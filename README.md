@@ -25,24 +25,17 @@ We created a music review app where users can share album reviews.
 
 <br>
 
-## Technical Challenges
-
--
--
--
--
-
-<br>
-
 ## Future Improvements
 
--
+- Adding in a third-party API
+- Filter albums by different categories
+- User login
 
 <br>
 
 ## Author
 
 - Jaq Dunham, Mandy Tong, and Princeton Evans
-- [Heroku Link:](https://my-music-app.herokuapp.com/)
+- [Heroku Link:](https://music-review-front.herokuapp.com/)
 
 <br>
